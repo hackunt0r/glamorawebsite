@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream-50 font-body text-ink antialiased; }
+  html[lang='ar'] body { @apply font-arabic; }
+  section[id] { scroll-margin-top: 5rem; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-gold; outline-style: solid; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .eyebrow { @apply text-sm font-bold tracking-wide text-gold-dark; }
+  html[lang='en'] .eyebrow { @apply uppercase tracking-[0.2em] text-xs; }
+  .h2 { @apply mt-2 font-display text-3xl font-semibold leading-tight text-plum sm:text-4xl; }
+  html[lang='ar'] .h2 { @apply font-arabic font-bold leading-snug; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-bold transition duration-200; }
+  .btn-primary { @apply bg-plum text-cream-50 hover:bg-plum-700 active:scale-[0.98]; }
+  .btn-gold { @apply bg-gold text-white hover:bg-gold-dark active:scale-[0.98]; }
+  .btn-ghost { @apply border border-plum/30 text-plum hover:border-plum hover:bg-plum/5; }
+}

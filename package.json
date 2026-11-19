@@ -1,0 +1,34 @@
+{
+  "name": "glamora-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.7",
+    "framer-motion": "^14.14.0",
+    "lucide-react": "^1.75.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hook-form": "^7.92.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "description": "Bilingual (Arabic RTL default, English LTR) landing page for a women's beauty salon. Stack: React 19, Vite, TypeScript, Tailwind CSS 3, Framer Motion (LazyMotion), Lucide icons, React Hook Form, Zod.",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
+}
