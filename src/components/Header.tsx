@@ -37,7 +37,7 @@ export function Header({ lang, onToggleLang }: Props) {
     >
       <div className="container-x flex h-[68px] items-center justify-between gap-4">
         <a href="#top" className="flex items-center gap-2" aria-label="Glamora Beauty Salon">
-          <img src="/brand/logo-480.webp" width={72} height={48} alt="" className="h-11 w-auto rounded-md" />
+          <img src={`${import.meta.env.BASE_URL}brand/logo-480.webp`} width={72} height={48} alt="" className="h-11 w-auto rounded-md" />
           <span className="font-display text-2xl font-semibold italic text-plum">Glamora</span>
         </a>
 

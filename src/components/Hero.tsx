@@ -52,8 +52,8 @@ export function Hero({ lang }: { lang: Lang }) {
           <div className="relative mx-auto max-w-xl">
             <div aria-hidden="true" className="absolute -inset-3 rounded-[2rem] border border-gold/40" />
             <img
-              src="/brand/logo-960.webp"
-              srcSet="/brand/logo-480.webp 480w, /brand/logo-960.webp 960w"
+              src={`${import.meta.env.BASE_URL}brand/logo-960.webp`}
+              srcSet={`${import.meta.env.BASE_URL}brand/logo-480.webp 480w, ${import.meta.env.BASE_URL}brand/logo-960.webp 960w`}
               sizes="(min-width: 1024px) 560px, 90vw"
               width={960}
               height={640}

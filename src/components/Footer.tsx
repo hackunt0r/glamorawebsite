@@ -13,7 +13,7 @@ export function Footer({ lang }: { lang: Lang }) {
     <footer className="bg-plum-900 pb-24 pt-14 text-cream-100 sm:pb-12">
       <div className="container-x">
         <div className="flex flex-col items-center text-center">
-          <img src="/brand/logo-480.webp" width={240} height={160} alt="Glamora Beauty Salon" loading="lazy" className="h-28 w-auto rounded-2xl" />
+          <img src={`${import.meta.env.BASE_URL}brand/logo-480.webp`} width={240} height={160} alt="Glamora Beauty Salon" loading="lazy" className="h-28 w-auto rounded-2xl" />
           <p className="mt-3 text-cream-200/80">{t.footer.tag}</p>
           <Divider className="mt-6" />
         </div>
